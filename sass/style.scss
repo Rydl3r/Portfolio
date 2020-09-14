@@ -249,7 +249,7 @@ font-size: 25px;
 .reviews_quote {
   font-size: 22px;
   font-weight: 700;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .swiper-container {
@@ -310,6 +310,9 @@ font-size: 25px;
   .container {
     max-width: 1100px;
   }
+  .reviews_quote {
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 1010px) { 
@@ -338,13 +341,15 @@ font-size: 25px;
   }
   .reviews_author_name {
     padding-left: 0;
+    padding-top: 0;
   }
   .reviews_quote {
     font-size: 14px;
   }
-  .navbar {
-    display: none;
+  .reviews_author {
+    padding-top: 0;
   }
+
 }
 
 @media (max-width: 610px) {
@@ -356,6 +361,23 @@ font-size: 25px;
 }
 .reviews_quote {
   padding-top: 33px;
+}
+.nav-link {
+  font-size: 12px;
+}
+.nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.reviews_author__image {
+  width: 90px;
+  height: 90px;
+}
+.swiper-button-next {
+  display: none;
+}
+.swiper-button-prev {
+  display: none;
 }
 }
 
