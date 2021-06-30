@@ -1,195 +1,255 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rydler's Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/93b8b36d6c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav_temp_item">
-
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#hero">Home</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#about_me">About</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#examples">Examples</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
-        </div>
-        <div class="nav-item">
-            <a class="nav-link" href="#contact_me">Contacts</a>
-        </div>
-
-        <div class="nav-item-language">
-            <a href="./pages/ru.html">
-                <img src="./img/russian_flag.jpg">
-            </a>
-        </div>
-    </nav>
-    <div class="container hero" id="hero">
-        <div class="main_title">Hi. I'm <span class="yellow">Rydler</span></div>
-        <div class="main_subtitle">This is my portfolio</div>
-        <svg id="more-arrows" class="ml-auto mr-auto mt-5">
-            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "></polygon>
-            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "></polygon>
-            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "></polygon>
-         </svg>
-    </div>
-    <div class="container about_me" id="about_me">
-        <div class="section_title">About Me</div>
-        <div class="about_me_content">
-            <div class="about_me_text">Hi! My name is Rydler, I'm a Web Developer.
-                <br><br>For me, web development began as a hobby, but now it has grown into a full-time job, because I absolutely love to make quality product
-                <br><br> In my works, my goal is to combine efficiency and effectiveness to reach a perfect result
-                <br><br>I appreciate your time, thats why I aim for delivering your projects in time.
-            </div>
-            <div class="logo">
-                <img src="./img/logo.png" class="logo_image">
-            </div>
-            <div class="skills">
-                <div class="skills_title">My skills</div>
-                <ul class="skills_list">
-                    <li class="skills_item">- HTML</li>
-                    <li class="skills_item">- CSS</li>
-                    <li class="skills_item">- Javascript</li>
-                    <li class="skills_item">- React JS, React Redux</li>
-                    <li class="skills_item">- Frameworks (Bootstrap, Materialize etc...)</li>
-                    <li class="skills_item">- Preprocessors (Sass, Less)</li>
-                    <li class="skills_item">- Testing (Jest, Cypress etc...)</li>
-                    <li class="skills_item">- Git and Github</li>
+    <section class="hero" id="hero">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#hero" class="navbar__item nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about_me" class="navbar__item nav-link">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="navbar__item nav-link">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#examples" class="navbar__item nav-link">EXAMPLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="navbar__item nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="navbar__item nav-link">CONTACT</a>
+                    </li>
                 </ul>
-            </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero__title"><span>I’m a</span><br>
+                FRONTEND <br>
+                DEVELOPER.</div>
+            <div class="button_wrapper"><a href="#contact" class="hero__button">Contact Me</a></div>
         </div>
-    </div>
-    <div class="container examples" id="examples">
-        <h1 class="section_title">Examples</h1>
-        <div class="examples">
-            <div class="card-row">
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_1.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Bochka</div>
-                        <p class="card-text">Pure HTML + CSS company website</p>
-                        <a href="https://rydl3r.github.io/Bochka/" class="btn_link">Visit</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_2.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Bayya</div>
-                        <p class="card-text">Pure HTML + CSS landing templates</p>
-                        <a href="https://rydl3r.github.io/Bayya/" class="btn_link">Visit</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_4.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Pollen</div>
-                        <p class="card-text">Pure HTML + CSS studio website.</p>
-                        <a href="https://rydl3r.github.io/Pollen/" class="btn_link">Visit</a>
-                    </div>
-                </div>
+    </section>
+    <section class="about_me" id="about_me">
+        <div class="container">
+            <div class="section__title">
+                <div class="section__title_front">About Me</div>   
+                <div class="section__title_back">About</div>   
             </div>
-            <div class="card-row">
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_3.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Weather App</div>
-                        <p class="card-text">React JS + OpenWeather API</p>
-                        <a href="https://rydl3r.github.io/Weather-App/" class="btn_link">Visit</a>
-                    </div>
+            <div class="about_me__content">
+                <div class="about_me__image">
+                    <div class="about_me__image__source"><img src="/img/about_me_photo.png" alt="Ivan Mukoed"></div>
+                    <div class="about_me__image__border"></div>
                 </div>
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_5.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Quiz Game</div>
-                        <p class="card-text">React JS + Quiz API</p>
-                        <a href="https://rydl3r.github.io/Quiz-App/" class="btn_link">Visit</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/projects_screens/screenshot_6.jpg" class="card-img" alt="...">
-                    <div class="card-body">
-                        <div class="card-title">Mountain Traveling</div>
-                        <p class="card-text">Pure HTML + CSS company landing page</p>
-                        <a href="https://rydl3r.github.io/Mountain-Traveling/" class="btn_link">Visit</a>
+                <div class="about_me__text">
+                    <div class="about_me__text__title">My name is <span>Ivan Mukoed</span></div>
+                    <div class="about_me__text__subtitle">I’m a frontend web developer with a lot of passion for my job, as well as creativity. I have 3 years of experience working in small companies and freelancing. In that time I acquired a lot of useful skills to make beautiful websites for your products. I’ve worked with different clients, worked on complex and simple tasks, helped reach ambitious goals and difficult dreams. Whatever you’ve got for me - I’m ready. Contact me now to up your web game to a whole new level.</div>
+                    <div class="about_me__text__contacts">
+                        <div class="about_me__text__contacts__title">Email</div>
+                        <div class="about_me__text__contacts__subtitle">1rydler@gmail.com</div>
+                        <div class="about_me__text__contacts__title">Education</div>
+                        <div class="about_me__text__contacts__subtitle">Bachelor in Informatics
+                            <br>Warsaw University Of Technology</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container reviews" id="reviews">
-        <div class="section_title">Reviews</div>
-        <div class="reviews_content">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+    </section>
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section__title">
+                <div class="section__title_front">Skills</div>   
+                <div class="section__title_back">Skills</div>   
+            </div>
 
-                    <div class="swiper-slide">
-                        <div class="slide">
-                            <div class="reviews_author">
-                                <div class="reviews_author_image">
-                                    <img src="./img/users_logos/toronto.png" class="reviews_author__image" alt="">
-                                </div>
-                                <div class="reviews_author_name"><b>"Toronto"</b>, <br></br>
-                                    Project - <a href="https://rydl3r.github.io/Bochka/" class="reviews_project_link">Bochka</a>, company landing on pure CSS + HTML
-                                </div>
+            
+            <div class="u-center">
+                <section class="skills">
+                    <div class="skill">
+                        <h3 class="skill__type">HTML</h3>
+                        <div class="skill__outer-bar">
+                            <div class="skill__inner-bar skill__inner-bar--100"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill__type">CSS</h3>
+                        <div class="skill__outer-bar">
+                            <div class="skill__inner-bar skill__inner-bar--100"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill__type">JS</h3>
+                        <div class="skill__outer-bar">
+                            <div class="skill__inner-bar skill__inner-bar--90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill__type">React</h3>
+                        <div class="skill__outer-bar">
+                            <div class="skill__inner-bar skill__inner-bar--70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill__type">Freelancing</h3>
+                        <div class="skill__outer-bar">
+                            <div class="skill__inner-bar skill__inner-bar--50"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+              
+              <div class="skills_available" id="available"></div>
+        </div>
+    </section>
+    <section class="examples" id="examples">
+        <div class="container">
+            <div class="section__title">
+                <div class="section__title_front">Examples</div>   
+                <div class="section__title_back">Examples</div>   
+            </div>
+
+            <div class="examples_wrapper">
+                <div class="examples_block">
+
+                    <div class="examples_row">
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/bochka.png" alt="" class="examples_item_image_source">
                             </div>
-                            <div class="reviews_quote">
-                                Did everything in short time, for a decent price. Did all minor edits that I asked him to do. Also, helped with installment on web server.
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">Bochka Commercial Website</div> 
+                                <a href="https://rydl3r.github.io/Bochka/" class="examples_item_content_link">Visit</a>
+                            </div>
+                        </div>
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/mountain.png" alt="" class="examples_item_image_source">
+                            </div>
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">Mountain Traveling Landing Page</div> 
+                                <a href="https://rydl3r.github.io/Mountain-Traveling/" class="examples_item_content_link">Visit</a>
+                            </div>
+                        </div>
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/pollen.png" alt="" class="examples_item_image_source">
+                            </div>
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">Pollen design template</div> 
+                                <a href="https://rydl3r.github.io/Pollen/" class="examples_item_content_link">Visit</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="swiper-slide">
-                        <div class="slide">
-                            <div class="reviews_author">
-                                <div class="reviews_author_image">
-                                    <img src="./img/users_logos/kodinga.png" class="reviews_author__image" alt="">
-                                </div>
-                                <div class="reviews_author_name"><b>"Kodinga"</b>, <br></br>
-                                    Project - <a href="https://rydl3r.github.io/Bayya/" class="reviews_project_link">Bayya</a>, company landing on pure CSS + HTML
-                                </div>
+
+                    
+                </div>
+                <div class="examples_block hidden">
+                    <div class="examples_row">
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/quiz.png" alt="" class="examples_item_image_source">
                             </div>
-                            <div class="reviews_quote">
-                                I was in a big hurry, but Rydler did everything flawlessly. The job was done in a few hours and the price was really good.
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">React Quiz Game</div> 
+                                <a href="https://rydl3r.github.io/Quiz-App/" class="examples_item_content_link">Visit</a>
+                            </div>
+                        </div>
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/c2c.png" alt="" class="examples_item_image_source">
+                            </div>
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">C2C landing page</div>    
+                                <a href="https://rydl3r.github.io/Bayya/" class="examples_item_content_link">Visit</a>
+                            </div>
+                        </div>
+                        <div class="examples_item">
+                            <div class="examples_item_image">
+                                <img src="./img/Project Screens/weather.png" alt="" class="examples_item_image_source">
+                            </div>
+                            <div class="examples_item_content">
+                                <div class="examples_item_content_title">Weather app with React</div> 
+                                <a href="https://rydl3r.github.io/Weather-App/" class="examples_item_content_link">Visit</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            </div>
+
+            <button class="examples_more" onclick="loadMore()">Show more</button>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__title">
+                <div class="section__title_front">Services</div>   
+                <div class="section__title_back">Services</div>   
+            </div>
+            <div class="services_block">
+                <div class="services_row">
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="services_item_title">Full Responsiveness</div>
+                        <div class="services_item_text">Your project will be fully responsive for all devices: computers, laptops, tablets, phones</div>
+                    </div>
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fas fa-language"></i></div>
+                        <div class="services_item_title">Translation</div>
+                        <div class="services_item_text">Your projects can be translated in any language you want using frameworks</div>
+                    </div>
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fab fa-behance"></i></div>
+                        <div class="services_item_title">Modern design</div>
+                        <div class="services_item_text">Design for your website is made using the best technologies and instruments</div>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fab fa-instagram"></i></div>
+                        <div class="services_item_title">Social Media Integration</div>
+                        <div class="services_item_text">All your social media (instagram, facebook, youtube) can be integrated into you website</div>
+                    </div>
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="services_item_title">Always on time</div>
+                        <div class="services_item_text">All your projects will be delivered fully, in time, with all the ideas implemented</div>
+                    </div>
+                    <div class="services_item">
+                        <div class="services_item_icon"><i class="fas fa-check"></i></div>
+                        <div class="services_item_title">Two ways of working</div>
+                        <div class="services_item_text">All your ideas will be heard, thought of, and if they are good - implemented</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="contact_me" id="contact_me">
-            If you want to ask me a question or place an order, write me on:<br>
-            <a class="mail_link" href="mailto:1rydler@gmail.com?subject=Website">1rydler@gmail.com</a>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact_title">Contact me</div>
+            <div class="contact_mail">
+                <i class="far fa-envelope"></i>
+                <a href="mailto:1rydler@gmail.com" class="contact_mail_link">1rydler@gmail.com</a>
+            </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="footer">
-            2020. Made by <span class="yellow">@Rydler</span>
-        </div>
-    </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
+    </section>
+<script src="./js/index.js"></script>
 </body>
-
 </html>
